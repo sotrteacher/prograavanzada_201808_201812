@@ -8,7 +8,7 @@
  * Esta clase tambi\'en muestra como podemos declarar 
  * clases sin secciones privadas. 
  */
-
+struct Nota_Directorio;
 struct Nota{
   int intFecha;
   string stringFecha;
