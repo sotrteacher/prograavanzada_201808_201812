@@ -50,19 +50,22 @@ struct Nota{
    * Deber\'a contar la cantidad de notas creadas hasta el momento por 
    * el remitente cuyo nombre se pasa como cadena a este m\'etodo.
    */ 
-  static int contar_notas_del_remitente(string stringNombreDelRemitente);
+  static int contar_notas_del_remitente(string stringNombreDelRemitente,
+		  Nota_Directorio& el_directorio);
 
   /**
    * Deber\'a contar la cantidad de notas que el remitente rem haya enviado 
    * al destinatario dest hasta el momento en que se ejecute este m\'etodo.
    */ 
-  static int contar_notas_del_remitente_al_destinatario(string rem,string dest);
+  static int contar_notas_del_remitente_al_destinatario(string rem,string dest,
+		  Nota_Directorio& el_directorio);
 
   /**
    * Deber\'a contar la cantidad de notas "recibidas" hasta el momento por 
    * el destinatario cuyo nombre se pasa como cadena a este mi\'etodo.
    */ 
-  static int contar_notas_del_destinatario(string stringNombreDelDestinatario);
+  static int contar_notas_del_destinatario(string stringNombreDelDestinatario,
+		  Nota_Directorio& el_directorio);
 };//end struct Nota
 
 #endif /* NOTA_H */
