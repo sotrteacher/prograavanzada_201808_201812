@@ -11,8 +11,8 @@
 #include <stdlib.h>
 #endif
 using namespace std;
-#include "Nota_Directorio.h"
 #include "Nota.h"
+#include "Nota_Directorio.h"
 
 //Declaraci\'on de las funciones
 void procesar_comandos(Nota_Directorio& el_directorio);
