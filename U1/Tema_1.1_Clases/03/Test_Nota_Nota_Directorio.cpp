@@ -26,7 +26,7 @@ void do_mostrar_Notas_de_un_destinatario(Nota_Directorio& el_directorio) __attri
 void do_mostrar_Notas_de_un_remitente_a_un_destinatario(Nota_Directorio& el_directorio) __attribute__ ((weak));
 void do_buscar_entradas(Nota_Directorio& el_directorio) __attribute__ ((weak));
 void do_remove_entry(Nota_Directorio& el_directorio) __attribute__ ((weak));
-void do_save(Nota_Directorio& el_directorio) __attribute__ ((weak));
+void do_salir(Nota_Directorio& el_directorio) __attribute__ ((weak));
 
 int main(int argc,char* argv[])
 {
@@ -78,7 +78,7 @@ void procesar_comandos(Nota_Directorio& el_directorio){
 			case 6:{do_mostrar_Notas_de_un_remitente_a_un_destinatario(el_directorio);break;}
 			case 7:{do_buscar_entradas(el_directorio);break;}
 			case 8:{do_remove_entry(el_directorio);break;}
-			case 9:{do_save(el_directorio);break;}
+			case 9:{do_salir(el_directorio);break;}
 		}
 	}while(opcion<NUM_COMMANDS-1);
 }//end void procesar_comandos()
@@ -121,7 +121,7 @@ void do_buscar_entradas(Nota_Directorio& el_directorio){
 void do_remove_entry(Nota_Directorio& el_directorio){
 }
 
-void do_save(Nota_Directorio& el_directorio){
+void do_salir(Nota_Directorio& el_directorio){
 }
 
 
