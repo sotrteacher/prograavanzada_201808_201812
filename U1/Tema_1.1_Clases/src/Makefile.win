@@ -1,0 +1,66 @@
+# Project: ProyectoTest_Nota_Nota_Directorio
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = Test_Nota_Nota_Directorio.o Nota.o Nota_Directorio.o 2016620256.o 2015080063.o 2016640031.o 2019640503.o 2011640360.o gettingdate.o Nota_Directorio_weak.o Test_Nota_Nota_Directorio_weak.o 2013090388.o 2015031144.o
+LINKOBJ  = Test_Nota_Nota_Directorio.o Nota.o Nota_Directorio.o 2016620256.o 2015080063.o 2016640031.o 2019640503.o 2011640360.o gettingdate.o Nota_Directorio_weak.o Test_Nota_Nota_Directorio_weak.o 2013090388.o 2015031144.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = ProyectoTest_Nota_Nota_Directorio.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+include makefile.mak
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Test_Nota_Nota_Directorio.o: Test_Nota_Nota_Directorio.cpp
+	$(CPP) -c Test_Nota_Nota_Directorio.cpp -o Test_Nota_Nota_Directorio.o $(CXXFLAGS)
+
+Nota.o: Nota.cpp
+	$(CPP) -c Nota.cpp -o Nota.o $(CXXFLAGS)
+
+Nota_Directorio.o: Nota_Directorio.cpp
+	$(CPP) -c Nota_Directorio.cpp -o Nota_Directorio.o $(CXXFLAGS)
+
+2016620256.o: 2016620256.cpp
+	$(CPP) -c 2016620256.cpp -o 2016620256.o $(CXXFLAGS)
+
+2015080063.o: 2015080063.cpp
+	$(CPP) -c 2015080063.cpp -o 2015080063.o $(CXXFLAGS)
+
+2016640031.o: 2016640031.cpp
+	$(CPP) -c 2016640031.cpp -o 2016640031.o $(CXXFLAGS)
+
+2019640503.o: 2019640503.cpp
+	$(CPP) -c 2019640503.cpp -o 2019640503.o $(CXXFLAGS)
+
+2011640360.o: 2011640360.cpp
+	$(CPP) -c 2011640360.cpp -o 2011640360.o $(CXXFLAGS)
+
+gettingdate.o: gettingdate.cpp
+	$(CPP) -c gettingdate.cpp -o gettingdate.o $(CXXFLAGS)
+
+Nota_Directorio_weak.o: Nota_Directorio_weak.cpp
+	$(CPP) -c Nota_Directorio_weak.cpp -o Nota_Directorio_weak.o $(CXXFLAGS)
+
+Test_Nota_Nota_Directorio_weak.o: Test_Nota_Nota_Directorio_weak.cpp
+	$(CPP) -c Test_Nota_Nota_Directorio_weak.cpp -o Test_Nota_Nota_Directorio_weak.o $(CXXFLAGS)
+
+2013090388.o: 2013090388.cpp
+	$(CPP) -c 2013090388.cpp -o 2013090388.o $(CXXFLAGS)
+
+2015031144.o: 2015031144.cpp
+	$(CPP) -c 2015031144.cpp -o 2015031144.o $(CXXFLAGS)
